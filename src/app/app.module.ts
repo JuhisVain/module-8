@@ -9,6 +9,9 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { InfoSlidesPage } from '../pages/info-slides/info-slides';
 import { SettingsPage } from '../pages/settings/settings';
+import { NewsPage } from '../pages/news/news';
+import { MenuPage } from '../pages/menu/menu';
+import { FeedbackPage } from '../pages/feedback/feedback';
 
 import { FirebaseProvider } from '../providers/firebase/firebase';
 
@@ -18,7 +21,11 @@ import { FirebaseProvider } from '../providers/firebase/firebase';
     HomePage,
     LoginPage,
     InfoSlidesPage,
-    SettingsPage
+    SettingsPage,
+    NewsPage,
+    MenuPage,
+    FeedbackPage
+    
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,10 @@ import { FirebaseProvider } from '../providers/firebase/firebase';
     HomePage,
     LoginPage,
     InfoSlidesPage,
-    SettingsPage
+    SettingsPage,
+    NewsPage,
+    MenuPage,
+    FeedbackPage
   ],
   providers: [
     StatusBar,

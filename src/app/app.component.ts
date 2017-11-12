@@ -8,8 +8,12 @@ import { LoginPage } from '../pages/login/login';
 import { InfoSlidesPage } from '../pages/info-slides/info-slides';
 
 //pages that can be accessed throught side navigation
-import { SettingsPage } from '../pages/settings/settings';
 import { HomePage } from '../pages/home/home';
+import { SettingsPage } from '../pages/settings/settings';
+import { NewsPage } from '../pages/news/news';
+import { MenuPage } from '../pages/menu/menu';
+import { FeedbackPage } from '../pages/feedback/feedback';
+
 
 //firebase
 import firebase from 'firebase';
@@ -44,7 +48,11 @@ export class MyApp {
     // pages array, add all pages for side navigation here
     this.menuPages = [
       { title: 'Home', component: HomePage},
-      { title: 'Settings', component: SettingsPage}
+      { title: 'Settings', component: SettingsPage},
+      { title: 'Menu', component: MenuPage },
+      { title: 'News', component: NewsPage},
+      { title: 'Feedback', component: FeedbackPage}
+      // { title: ''. component: }
     ];
    }
    
