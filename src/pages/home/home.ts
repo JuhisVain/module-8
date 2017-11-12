@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController, MenuController } from 'ionic-angular';
 
 import firebase from 'firebase';
@@ -8,6 +8,8 @@ import firebase from 'firebase';
   templateUrl: 'home.html'
 })
 export class HomePage {
+
+  @ViewChild("audio") audio;
 
     activeMenu: string;
 
@@ -22,6 +24,8 @@ export class HomePage {
         console.log("There's no user here");
       }
     });
+
+
   }
 
 

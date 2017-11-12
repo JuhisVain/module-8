@@ -68,6 +68,8 @@ export class LoginPage {
       },
       error => {
           this.navCtrl.setRoot(SettingsPage)
+          var audio = new Audio('assets/audio/denied.mp3');
+          audio.play();
       }
     );
   }
@@ -89,6 +91,8 @@ export class LoginPage {
         },
         error => {
           this.loading.dismiss().then(() => {
+            var audio = new Audio('assets/audio/denied.mp3');
+            audio.play();
             const alert: Alert = this.alertCtrl.create({
               message: error.message,
               buttons: [{ text: 'Ok', role: 'cancel' }]

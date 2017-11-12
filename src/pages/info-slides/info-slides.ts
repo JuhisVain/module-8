@@ -18,6 +18,9 @@ export class InfoSlidesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
+    var audio = new Audio('assets/audio/outstanding.mp3');
+    audio.play();
+
 
   }
   gotItButton() {
@@ -27,5 +30,6 @@ export class InfoSlidesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad InfoSlidesPage');
   }
+  
 
 }
