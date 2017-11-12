@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, MenuController } from 'ionic-angular';
+
+import firebase from 'firebase';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +9,20 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+    activeMenu: string;
 
+    public userProfile:any = null;
+
+  constructor(public navCtrl: NavController, public menu: MenuController) {
+    firebase.auth().onAuthStateChanged( user => {
+      if (user) {
+        console.log(user);
+        this.userProfile = user;
+      } else {
+        console.log("There's no user here");
+      }
+    });
   }
+
 
 }

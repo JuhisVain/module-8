@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<universal-links>
+    <host name="https://j6vc3.app.goo.gl/jTpt" scheme="https" />
+    <host name="resume-app-test.firebaseapp.com" scheme="https">
+        <path url="/__/auth/callback" />
+    </host>
+    <content src="index.html" />
+</universal-links>

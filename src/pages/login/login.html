@@ -1,0 +1,44 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Authentication</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input formControlName="email" type="email" placeholder="Your email address" [class.invalid]="!loginForm.controls.email.valid && blur">
+      </ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="!loginForm.controls.email.valid && loginForm.controls.email.dirty">
+      <p>Please enter a valid email.</p>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input formControlName="password" type="password" placeholder="Your password" [class.invalid]="!loginForm.controls.password.valid && blur">
+      </ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="!loginForm.controls.password.valid && loginForm.controls.password.dirty">
+      <p>Password has to be atleast 6 characters</p>
+    </ion-item>
+    <button ion-button block type="submit" [disabled]="!loginForm.valid"> Log In </button>
+  </form>
+  <button ion-button block (click)="goToSignup()"> New account </button>
+  <!--<button ion-button block (click)="goToResetPassword()">Forgotten password</button>-->
+  <!-- <button ion-button block [disabled]="true" (click)="signupWithGoogle()"> Login with Google </button> -->
+  <button ion-button block (click)="signupWithGoogle()"> Login with Google </button>
+  
+  <ion-item class="error-message">
+    <p>Feature not supported at the moment</p>
+  </ion-item>
+
+</ion-content>

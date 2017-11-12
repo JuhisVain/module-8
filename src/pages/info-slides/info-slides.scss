@@ -1,0 +1,29 @@
+page-info-slides {
+    .slide-img {
+        height: 100%;
+        width: 100%;
+    }
+    .slide-title {
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+
+    }
+    .slide-text {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        color: white;
+        font-size: 1.0em;
+        text-align: center;
+    }
+    .continueButton {
+        position: absolute;
+        width: 100%;
+        top: 85%;
+        text-align: center;
+    }
+}
