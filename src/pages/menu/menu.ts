@@ -15,10 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MenuPage {
 
-  shoppings: any;
-
-  constructor(public navCtrl: NavController) {
-    this.shoppings = ['Chocolate','Cookies','Soda','Coffee','Tea','Sandwich','Apple','Banana'];
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {

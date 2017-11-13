@@ -1,3 +1,13 @@
 page-signup {
-
+//Background image
+.back-image {
+    background-image: url('../../assets/imgs/restaurant.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  //No scroll
+  .no-scroll .scroll-content {
+      overflow: hidden;
+  }
 }

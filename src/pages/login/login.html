@@ -10,9 +10,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="bg-image no-scroll" padding>
 
+  <!--<img src="../../assets/imgs/coffee.jpg" class="logo">-->
 
+<!--Login form and verifications-->
   <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
     <ion-item>
       <ion-label stacked>Email</ion-label>

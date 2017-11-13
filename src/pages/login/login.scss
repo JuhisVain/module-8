@@ -1,3 +1,25 @@
 page-login {
 
+//Background image
+.bg-image {
+  background-image: url('../../assets/imgs/restaurant.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+//No scroll
+.no-scroll .scroll-content {
+    overflow: hidden;
+}
+//Logo
+.logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top: 2vh;
+}
+.label {
+    background-color: rgba(255,255,255, 0.0);
+}
+
 }
